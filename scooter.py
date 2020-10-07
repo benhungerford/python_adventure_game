@@ -1,2 +1,2 @@
 def scooter():
-    print('This works')
+    print('You chose the scooter')

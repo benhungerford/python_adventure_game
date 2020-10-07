@@ -1,7 +1,7 @@
 import sys,time,random
 import scooter
-# import delorian
-# import bus
+import delorean
+import bus
 
 def print_slow(str):
     for letter in str:
@@ -18,11 +18,19 @@ print("""The sun peaks through the window. You feel peaceful and calm as you ope
 choice = int(input('Whatchu wanna do? '))
 
 if choice == 1:
-    scooter.scooter()
+    print("""It took you 15 minutes to get ready to go, you now have 15 minutes to get to school on time.
+    \nYou have 2 options: \n1. Take the bus. \n2. Take the Delorean\n""")
+    vehicle_choice = int(input('1 or 2? '))
+    if vehicle_choice == 1:
+        bus.bus()
+    if vehicle_choice == 2:
+        delorean.delorean()
 
-# if choice == 2:
-#
-# if choice == 3:
+elif choice == 2:
+    scooter.scooter()
+elif choice == 3:
+    print('You fail at life. Game over.')
+
 
 #
 #
