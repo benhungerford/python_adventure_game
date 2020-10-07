@@ -9,34 +9,35 @@ def print_slow(str):
         sys.stdout.flush()
         time.sleep(0.06)
 
-print("""The sun peaks through the window. You feel peaceful and calm as you open your eyes and look over at your clock. It's 8:30am. "OH ^$&*, I'm gonna be late for school!", you say out loud.
-\n\nYou have an incredibly crucial decision to make. Do you:
-\n1. Calmly get up, get dressed, collect your things, make breakfast, and walk out the door?
-\n2. Frantically grab everything and run out the front door?
-\n3. Orrrrrrrrr...hear me out...just go back to bed man. Sleep was much better than all the stress.\n""")
+class Player:
+    def __init__(self):
+        self.in_hand = {
+            'money': 25,
+            'breakfast': True,
+            'backpack': [],
+        }
 
-choice = int(input('Whatchu wanna do? '))
+def game():
+    print("""The sun peaks through the window. You feel peaceful and calm as you open your eyes and look over at your clock. It's 8:30am. "OH ^$&*, I'm gonna be late for school!", you say out loud.
+    \n\nYou have an incredibly crucial decision to make. Do you:
+    \n1. Calmly get up, get dressed, collect your things, make breakfast, and walk out the door?
+    \n2. Frantically grab everything and run out the front door?
+    \n3. Orrrrrrrrr...hear me out...just go back to bed man. Sleep was much better than all the stress.\n""")
 
-if choice == 1:
-    print("""It took you 15 minutes to get ready to go, you now have 15 minutes to get to school on time.
-    \nYou have 2 options: \n1. Take the bus. \n2. Take the Delorean\n""")
-    vehicle_choice = int(input('1 or 2? '))
-    if vehicle_choice == 1:
-        bus.bus()
-    if vehicle_choice == 2:
-        delorean.delorean()
+    choice = int(input('Whatchu wanna do? '))
 
-elif choice == 2:
-    scooter.scooter()
-elif choice == 3:
-    print('You fail at life. Game over.')
+    if choice == 1:
+        print_slow("""It took you 15 minutes to get ready to go, you now have 15 minutes to get to school on time.
+        \nYou have 2 options: \n1. Take the bus. \n2. Take the Delorean\n""")
+        vehicle_choice = int(input('1 or 2? '))
+        if vehicle_choice == 1:
+            bus.bus()
+        if vehicle_choice == 2:
+            delorean.delorean()
 
+    elif choice == 2:
+        scooter.scooter()
+    elif choice == 3:
+        print('You fail at life. Game over.')
 
-#
-#
-#
-# class Student_1:
-#     in_hand = { money: '$25', breakfast: True, backpack: []}
-#
-# class Student_2:
-#     in_hand = { money: '$25', breakfast: False }
+game()
