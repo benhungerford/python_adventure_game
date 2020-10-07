@@ -1,7 +1,9 @@
 import sys,time,random
 import scooter
+
 import delorean
 import bus
+
 
 def print_slow(str):
     for letter in str:
