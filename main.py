@@ -13,13 +13,7 @@ def print_slow(str):
         sys.stdout.flush()
         time.sleep(0.06)
 
-class Player:
-    def __init__(self):
-        self.in_hand = {
-            'money': 25,
-            'breakfast': True,
-            'backpack': [],
-        }
+
 
 def game():
     print("""The sun peaks through the window. You feel peaceful and calm as you open your eyes and look over at your clock. It's 8:30am. "OH ^$&*, I'm gonna be late for school!", you say out loud.
