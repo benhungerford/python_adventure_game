@@ -1,2 +1,4 @@
+import utilities
+
 def bus():
-    print('You chose the bus')
+    utilities.print_slow('You chose the bus')

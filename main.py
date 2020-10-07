@@ -1,4 +1,6 @@
-import sys,time,random
+import random
+import player
+import utilities
 import scooter
 
 import delorean
@@ -29,7 +31,7 @@ def game():
     choice = int(input('Whatchu wanna do? '))
 
     if choice == 1:
-        print_slow("""It took you 15 minutes to get ready to go, you now have 15 minutes to get to school on time.
+        print("""It took you 15 minutes to get ready to go, you now have 15 minutes to get to school on time.
         \nYou have 2 options: \n1. Take the bus. \n2. Take the Delorean\n""")
         vehicle_choice = int(input('1 or 2? '))
         if vehicle_choice == 1:
