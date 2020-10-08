@@ -26,4 +26,8 @@ def delorean():
 print_slow("")
 
 
+def delorean():
+
+    print('You chose the Delorean')
+
 delorean()
