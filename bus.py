@@ -109,5 +109,3 @@ def bus():
             elif dragon_choice2 == 3:
                 print_slow("You relunctantly offer your breakfast. The dragon lets you live...for now. You walk into school on time.")
                 print_slower('\n......\nuntil school ends and you walk outside...')
-
-bus()
