@@ -1,16 +1,28 @@
 from utilities import print_slow
+from utilities import print_slower
 
 class Player:
     def __init__(self):
         self.in_hand = {
-            'money': 15,
+            'money': 25,
             'breakfast_burrito': True,
-            'hover_board': True,
-            'backpack': [],
+            'backpack': ["hover_board", "sports_almanac", "gum"],
         }
 
 def delorean():
 #choose to drive or fly delorean.....................................................
+    print("""                      ___..............._
+             __.. ' _'.""""""\\""""""""- .`-._
+ ______.-'         (_) |      \\           ` \\`-. _
+/_       --------------'-------\\---....______\\__`.`  -..___
+| T      _.----._           Xxx|x...           |          _.._`--. _
+| |    .' ..--.. `.         XXX|XXXXXXXXXxx==  |       .'.---..`.     -._
+\_j   /  /  __  \  \        XXX|XXXXXXXXXXX==  |      / /  __  \ \        `-.
+ _|  |  |  /  \  |  |       XXX|""'            |     / |  /  \  | |          |
+|__\_j  |  \__/  |  L__________|_______________|_____j |  \__/  | L__________J
+     `'\ \      / ./__________________________________\ \      / /___________\
+        `.`----'.'   dp                                `.`----'.'
+      `""""'                                         `""""'""")
     print("""Roads...?!?!?  Where we're going, we don't need roads. \n
 This is heavy...,  there is only 15 minutes left to get to school.. \n
     Which way to take? \n
@@ -58,7 +70,7 @@ a wreck way up a ahead and it doesn't look good.  Do you  \n
 You end up being stuck there for 3 1/2 hours.  You never make it to school.  Game Over!!""")
 #choosing to ditch the delorean for on hover board route........................................
                 elif wreck_choice == "b":
-                        print("""You grab the hover board and ditch the delorean.  Placing the hover board under your feet,
+                    print("""You grab the hover board and ditch the delorean.  Placing the hover board under your feet,
 you begin hovering through traffic getting all the way through until its clear.  As you get out of traffic you think you hear someone in the
 background talking crazy....  something, something... dragon???  It was faint so clearly you miss heard.  Then
 you grab hold on to the back of a jeep that has also just cleared the traffic jam.  The jeep has a student parking
@@ -74,10 +86,99 @@ you see flashing lights in the rear view mirror.  WHAT!!!!!! Things just got hea
             a or b: """)
 
                 cop_choice = input()
-                if cop_choice = "a"
+                if cop_choice == "a":
+                    print("""You pull over to the side of the highway.  Your adrenaline is rushing... your
+ nerves are shot.... and you are sweating like crazy.   You now realize that the breakfast   burrito you ate
+ this morning is not sitting well in your stomach.    Oh No Oh No... you are about to be sick on your stomach.
+ Your stomach hurts so bad...., ughh... why is the officer taking so long.   do you...... \n
+                    1 - try to sit and wait? \n
+                    or \n
+                    2- run for the bushes so you can take care of business?""")
+
+                    stomach_choice = int(input())
+                    if stomach_choice == 1:
+                        print("""You wait hoping you can hold yourself together.  The officer finally comes and you tell him you're
+sick on your stomach and he lets you off with a warning and says its ok to speed to school for your emergency.
+You pull out speeding off to school again.  You finally get to the school parking lot...""")
+                        print_slower("""\n...\n......""")
+                        print_slow("""\nand then A DRAGON COMES FROM THE SKY BREATHING FIRE!!\n You did NOT see that coming!
+You are already out of the car in a running panic to get to the bathroom when the dragon lands in front of
+you to eat you and just as the dragon opens its mouth to swallow you whole, your body in a overly Adrenaline
+panic releaves itself of your upset stomach pains.  Your pants become a dark brown color.  The dragon gets
+a hint smell of you on the way down to eat you and immediately changes its mind and with a look of disgust, it flies
+away.  You shamefully walk into school with 1 min left. You made it but you didn't win.""")
+
+                    if stomach_choice == 2:
+                        print("""You can't hold it.  You bust out of the delorean in a frantic run running as fast as
+you can towards the bushes.  Just as you get there you are tackled into the bushes.  The officer saw you
+running and assummed you were trying to run away.  As you crash into the bushes the weight of the officer compresses
+your body making you what you hoped was the biggest fart you've ever had, but unfortunately you just went to
+the bathroom and turns out live pd was following him today and they have you doing that on live tv.  Needless to
+say you won't be making it to school today.   Game Over """)
+
+
+#;;;;;;;;;;;;this is if you choose to run from the cops option...........................
+
+                if cop_choice == "b":
+                    print("""You stick your hand out of the window and wave goodbye to the officer and floor it... You keep going faster
+and faster to get away from the officer not knowing you just topped 88 mph....   all of a sudden you are surrounded
+by all this light and a loud thunder sound and suddenly you are driving in a field that was where the highway was
+50 years ago.  What the...??   What to do... \n
+                    1- speed up again and hope it takes you back to where you were? \n
+                    2- use the sports_almanc to place some bets for the future before heading back? \n
+                    3- see if you can find someone named Doc Brown to help you? \n
+                    1, 2, or 3: """)
+
+                    time_choice = int(input())
+                    if time_choice == 1:
+                        print("""You speed back up in hopes of going back to the future.  You begin traveling back through time and end right
+back at the beginning of the morning where you began.  Looks like you get to start over""")
+
+                    if time_choice == 2:
+                        print("""You drive out to vegas to place some big bets.  While you are inside making bets someone steals the
+delorean.  You end up being stuck in the past for the rest of your life but...,  you have the sports almanac.
+You are able to make yourself the most wealthiest and 'luckiest' person alive.  You live a good life.""")
+
+                    if time_choice == 3:
+                        print("""You search the phone book for a Doctor Emmett Brown.  You tell him what happened and he agrees to help you.  He made an
+adjustment to the flux capasitor to help you get back to the right moment.  You take off and the delorean takes you back to the
+future to where you actually end up in the school parking lot with 5 mins to spare. CONGRATS YOU DID IT!!""")
 
 
 
 
 
-#/////////if option 2 skyway is chosen.......///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+#/////////if option 2 skyway is chosen.......////////////////////////////////////////////////////////////////
+
+    elif drivefly_choice == 2:
+        print(""" You spend 5 minutes trying to figure out how to get the Delorean in flight mode, but you figure it out.
+With only 10 minutes left, you shoot into the sky leaving the earth behind you.  You've never felt such a smooth ride.  You fly the
+delorean so high and fast and you aren't even being bother by g-force.  But all of a sudden you start hearing the Top Gun theme
+song and you all of a sudden realize Maverick, Goose and Ice Man are on your six... you aren't suppose to be flying and they have been sent
+to take you down...
+what do you do?  \n
+1- land the delorean \n
+2- try to shake them \n
+3-sing great balls of fire to them \n
+1,2, or 3: """)
+
+        sky_choice = int(input())
+        if sky_choice == 1:
+            print("""You are afraid of being in trouble so you start to attempt to land the delorean.  You've never landed
+the delorean before, and as you attempt to land it you loose control and crash into a mountain.  \n
+YOU DIED!""")
+
+        if sky_choice == 2:
+            print("""You stick your hand out the window and give them a thumbs down and speed off in hurry.
+            They begin shooting at you as you fly away.  Explosions are happening all around you as you try to avoid getting
+            hit by bullets and rockets.  One rocket blows up really close to you and some parts of the rocket fly through the window
+            destroying the flux capasitor.  The circuits in the delorean are sparking and the console catches on fire.
+            Just as you start to slow down to land and quit running Maverick flies over top of you upside down giving you the finger
+            and then drops a grenade in the delorean and blows you up.  YOU DIED!""")
+
+        if sky_choice == 3:
+            print("""You begin singing Great Balls Of Fire as loud as you can.  As Maverick and Ice Man look puzzled, Goose shouts out
+          "THAT'S MY JAM" and starts singing along with you.  Even though Maverick and Ice Man are really confused right now they
+          can't resist the soul and good feelings from the song. Maverick starts bobbing his head and begins singing along too.  Ice Man also
+          starts singing but more quietly sings.  He doesn't really know this song i guess.  You guys become friends and they lead you to school.
+          You get there with 5 minutes to spare.  Congrats You Win.""")
