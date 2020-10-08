@@ -32,7 +32,6 @@ def game():
             bus.bus()
         if vehicle_choice == 2:
             delorean.delorean()
-
     elif choice == 2:
         scooter.scooter()
     elif choice == 3:
