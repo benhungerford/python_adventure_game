@@ -99,8 +99,11 @@ def get_your_butt_to_school():
 
 def not_frog():
 <<<<<<< HEAD
+<<<<<<< HEAD
         print("""You continue to race to school, you probably should have stopped but she seemed a little sketchy anyway""")
 =======
+=======
+>>>>>>> restart update
     print("""You continue to race to school, you probably should have stopped but she seemed a little sketchy anyway""")
 >>>>>>> Added an ascii bus
     print_slower('...')
@@ -276,7 +279,3 @@ def iter():
     for i in player.in_hand['backpack']:
         print_slow(index,". ",i, "\n")
         index += 1
-<<<<<<< HEAD
-        
-=======
->>>>>>> Added an ascii bus

@@ -1,5 +1,6 @@
 from utilities import print_slow
 from utilities import print_slower
+from utilities import dragon_pic1
 
 class Player:
     def __init__(self):
@@ -37,12 +38,12 @@ This is heavy...,  there is only 15 minutes left to get to school.. \n
 then make like a tree and get out of here!\n  """)
 #a choice to speed to school or drive the speed limit here.....................................................
         print_slow("""With only 10 minutes left you are in a race against time no doubt.
-    Do you speed down the highway? y or n: """)
+Do you speed down the highway? y or n: """)
 
         road_choice = input().lower()
 #choosing not to speed here which ends the game immediately...............................
         if road_choice == "n":
-                print_slow("""You're driving the freaking Delorean for crying out loud
+            print_slow("""You're driving the freaking Delorean for crying out loud
 and you don't want to drive fast???   Get out of my game.""")
 
 #choosing to speed here. and running into traffic jam options.................................................................
@@ -70,12 +71,12 @@ a wreck way up a ahead and it doesn't look good.  Do you  \n
 You end up being stuck there for 3 1/2 hours.  You never make it to school.  Game Over!!""")
 #choosing to ditch the delorean for on hover board route........................................
                 elif wreck_choice == "b":
-                    print_slow("""You grab the hover board and ditch the delorean.  Placing the hover board under your feet,
+                    print_slow(f"""You grab the hover board and ditch the delorean.  Placing the hover board under your feet,
 you begin hovering through traffic getting all the way through until its clear.  As you get out of traffic you think you hear someone in the
 background talking crazy....  something, something... dragon???  It was faint so clearly you miss heard.  Then
 you grab hold on to the back of a jeep that has also just cleared the traffic jam.  The jeep has a student parking
 sticker to your school on the back of it.  So you hover from the back of the jeep all the way to the school parking lot. As you get there you hear this loud noise
-...  ...\n ......\n and then A DRAGON COMES FROM THE SKY BREATHING FIRE!!\n You did NOT see that coming! As the dragon lands you
+...  ...\n ......\n{dragon_pic1()}\nand then A DRAGON COMES FROM THE SKY BREATHING FIRE!!\n You did NOT see that coming! As the dragon lands you
 let go of the jeep.  The jeep driver stops in a panic and the dragon starts to breath fire on the jeep.  The driver jumps out and tries
 to run while the jeeps is melted and burnt to a crisp, but the dragon is so fast it chomps him up in a flash.   He never had a chance.  The dragon turns
 and looks at you.    What do you do? \n
@@ -87,25 +88,25 @@ and looks at you.    What do you do? \n
                     fight_choice = int(input())
                     if fight_choice == 1:
                         print_slow("""You stand still hoping that the dragons eyes are like a T-rex, If you don't move maybe
-                        it won't see you.   But thats not the case.  It does see you and it shoots the hottest fire ever shot
-                        leaving you a pile of ash in the parking lot.  YOU DIED!  Game Over""")
+it won't see you.   But thats not the case.  It does see you and it shoots the hottest fire ever shot
+leaving you a pile of ash in the parking lot.  YOU DIED!  Game Over""")
 
                     if fight_choice == 2:
                         print_slow("""You turn and run as fast as you can.  If you were on a football field you would be leaving all the
-                        players in the dust, but the dragon is much faster.  It smashes you with its tail knocking you across the parking lot.  You can't
-                        move anymore.  You just lay there hurt as the dragon walks up to you and swallows you whole.  \n
-                        YOU DIED.  Game Over! """)
+players in the dust, but the dragon is much faster.  It smashes you with its tail knocking you across the parking lot.  You can't
+move anymore.  You just lay there hurt as the dragon walks up to you and swallows you whole.  \n
+YOU DIED.  Game Over! """)
 
                     if fight_choice == 3:
                         print_slow("""You scream at it like a beast charging the dragon.  It begins to charge back.  As it gets you, it  starts to shoot fire.  You
-                        throw down the hover board and jump on it hovering  quickly under the dragon before it is able to hit you.  It turns around quickly and begins
-                        trying to slice you with its sharp tail.  But you dodge it and move all around avoiding the dragons strikes.  Then it smacks you with its claw
-                        knocking you through the school building walls into the class you are late for.  Everyone is screaming from what is happening.  The dragon
-                        crashes in the school coming after you and comes down to sink its teeth into you to finish you off and you move out of the way and it eats
-                        one of the students instead.   You get up and see some chemical cleaner that says WARNING HIGHLY FLAMMABLE on it.  You pick it up and dump it all
-                        over the hover board, then you see the that dragon is about to shoot fire again and just as it opens its mouth you throw the hover board up in its mouth and
-                        when the fire starts to come out the hover board blows up killing the dragon.  Everyone cheers for you.  The school makes you a hero and gives a
-                        terrific kid certificate and a excused tardy.  Your parents will be proud.   YOU WIN!!   """)
+throw down the hover board and jump on it hovering  quickly under the dragon before it is able to hit you.  It turns around quickly and begins
+trying to slice you with its sharp tail.  But you dodge it and move all around avoiding the dragons strikes.  Then it smacks you with its claw
+knocking you through the school building walls into the class you are late for.  Everyone is screaming from what is happening.  The dragon
+crashes in the school coming after you and comes down to sink its teeth into you to finish you off and you move out of the way and it eats
+one of the students instead.   You get up and see some chemical cleaner that says WARNING HIGHLY FLAMMABLE on it.  You pick it up and dump it all
+over the hover board, then you see the that dragon is about to shoot fire again and just as it opens its mouth you throw the hover board up in its mouth and
+when the fire starts to come out the hover board blows up killing the dragon.  Everyone cheers for you.  The school makes you a hero and gives a
+terrific kid certificate and a excused tardy.  Your parents will be proud.   YOU WIN!!   """)
 
 #this is the  option 2 of traffic choice.....................................................................................
 
@@ -138,6 +139,7 @@ you see flashing lights in the rear view mirror.  WHAT!!!!!! Things just got hea
 sick on your stomach and he lets you off with a warning and says its ok to speed to school for your emergency.
 You pull out speeding off to school again.  You finally get to the school parking lot...""")
                         print_slower("""\n...\n......""")
+                        dragon_pic1()
                         print_slow("""\nand then A DRAGON COMES FROM THE SKY BREATHING FIRE!!\n You did NOT see that coming!
 You are already out of the car in a running panic to get to the bathroom when the dragon lands in front of
 you to eat you and just as the dragon opens its mouth to swallow you whole, your body in a overly Adrenaline
@@ -169,8 +171,8 @@ by all this light and a loud thunder sound and suddenly you are driving in a fie
                     time_choice = int(input())
                     if time_choice == 1:
                         print_slow("""You speed back up in hopes of going back to the future.  You begin traveling back through time and end right
-back at the beginning of the morning where you began.  Looks like you get to start over""")
-
+back at the beginning of the morning where you began.""")
+                        return True
                     if time_choice == 2:
                         print_slow("""You drive out to vegas to place some big bets.  While you are inside making bets someone steals the
 delorean.  You end up being stuck in the past for the rest of your life but...,  you have the sports almanac.
@@ -214,15 +216,15 @@ YOU DIED!""")
 
         if sky_choice == 2:
             print_slow("""You stick your hand out the window and give them a thumbs down and speed off in hurry.
-            They begin shooting at you as you fly away.  Explosions are happening all around you as you try to avoid getting
-            hit by bullets and rockets.  One rocket blows up really close to you and some parts of the rocket fly through the window
-            destroying the flux capasitor.  The circuits in the delorean are sparking and the console catches on fire.
-            Just as you start to slow down to land and quit running Maverick flies over top of you upside down giving you the finger
-            and then drops a grenade in the delorean and blows you up.  YOU DIED!""")
+They begin shooting at you as you fly away.  Explosions are happening all around you as you try to avoid getting
+hit by bullets and rockets.  One rocket blows up really close to you and some parts of the rocket fly through the window
+destroying the flux capasitor.  The circuits in the delorean are sparking and the console catches on fire.
+Just as you start to slow down to land and quit running Maverick flies over top of you upside down giving you the finger
+and then drops a grenade in the delorean and blows you up.  YOU DIED!""")
 
         if sky_choice == 3:
             print_slow("""You begin singing Great Balls Of Fire as loud as you can.  As Maverick and Ice Man look puzzled, Goose shouts out
-          "THAT'S MY JAM" and starts singing along with you.  Even though Maverick and Ice Man are really confused right now they
-          can't resist the soul and good feelings from the song. Maverick starts bobbing his head and begins singing along too.  Ice Man also
-          starts singing but more quietly sings.  He doesn't really know this song i guess.  You guys become friends and they lead you to school.
-          You get there with 5 minutes to spare.  Congrats You Win.""")
+"THAT'S MY JAM" and starts singing along with you.  Even though Maverick and Ice Man are really confused right now they
+can't resist the soul and good feelings from the song. Maverick starts bobbing his head and begins singing along too.  Ice Man also
+starts singing but more quietly sings.  He doesn't really know this song i guess.  You guys become friends and they lead you to school.
+You get there with 5 minutes to spare.  Congrats You Win.""")

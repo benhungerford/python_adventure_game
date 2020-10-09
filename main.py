@@ -31,7 +31,9 @@ def game():
         if vehicle_choice == 1:
             bus.bus()
         if vehicle_choice == 2:
-            delorean.delorean()
+            restart = delorean.delorean()
+            if restart:
+                game()
     elif choice == 2:
         scooter.scooter()
     elif choice == 3:
