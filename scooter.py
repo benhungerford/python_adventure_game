@@ -165,6 +165,7 @@ def dragon():
 
         elif breakfast_choice == N:
             print_slow("You will NEVER give up your breakfast! It's the most important meal of the day!\nThe dragon respects your decision, but he too is hungry and decides to follow the same philosophy. You are eaten.\n")
+            game_over()
             print("""\033[1;35;40m            \||/
                     |  @___oo
           /\  /\   / (__,,,,|
@@ -177,7 +178,7 @@ def dragon():
      | \____(      )___) )\033[1;31;40m___\033[1;35;40m
       \______(_______;;; \033[1;31;40m__;;;____\033[1;37;40m""")
 
-          game_over()
+
 
     elif choice == 2:
         print_slow("Your backpack contains:\n")
@@ -206,6 +207,7 @@ def dragon():
         elif backpack_choice == 2:
 
             print_slow("You desperately search through your math book to find any weaknesses in the dragon. But this is a math book not a bestairy so they don't even mention dragons. So you throw your book at the dragon which only pisses it off and he eats you.\n")
+            game_over()
             print("""\033[1;35;40m            \||/
                     |  @___oo
           /\  /\   / (__,,,,|
@@ -218,7 +220,6 @@ def dragon():
      | \____(      )___) )\033[1;31;40m___\033[1;35;40m
       \______(_______;;; \033[1;31;40m__;;;____\033[1;37;40m""")
 
-              game_over()
 
         elif backpack_choice == 3:
 
@@ -237,6 +238,7 @@ def dragon():
             print_slow("You turn into a frog and to your great surprise, the dragon is deathly afraid of frogs and flies away screaming like a baby. You walk into school victorious. You win!")
         else:
             print_slow("Unfortunatly you are only a regular human being and have no frog powers. The dragon is a little confused but still eats you.\nYOU LOSE")
+            game_over()
             print("""\033[1;35;40m            \||/
                     |  @___oo
           /\  /\   / (__,,,,|
@@ -249,7 +251,6 @@ def dragon():
      | \____(      )___) )\033[1;31;40m___\033[1;35;40m
       \______(_______;;; \033[1;31;40m__;;;____\033[1;37;40m""")
 
-          game_over()
 
     elif choice == 4:
         print("""\033[1;35;40m                \||/
@@ -266,6 +267,7 @@ def dragon():
         print_slow("You sit and talk with the dragon for a little while, you talk with him about all the struggles and prejudices he has faced throughout his life, just for being a dragon. You are really making progress with him, and he is calming down.")
         print_slower("...")
         print_slow("But wait, this is a dragon and you aren't a certified therapist. So you didn't really fix his problems and he eats you.\n")
+        game_over()
         print("""\033[1;35;40m            \||/
                 |  @___oo
       /\  /\   / (__,,,,|
@@ -277,7 +279,6 @@ def dragon():
  ||      /    \)___)\\ \033[1;31;40m. . .\033[1;35;40m
  | \____(      )___) )\033[1;31;40m___\033[1;35;40m
   \______(_______;;; \033[1;31;40m__;;;____\033[1;37;40m""")
-      game_over()
 
 
 def iter():
