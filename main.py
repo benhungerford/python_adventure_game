@@ -37,6 +37,6 @@ def game():
     elif choice == 2:
         scooter.scooter()
     elif choice == 3:
-        print('You fail at life. Game over.')
+        print('You fail at life. .')
 
 game()

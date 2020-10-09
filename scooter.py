@@ -1,4 +1,4 @@
-from utilities import print_slow, print_slower, dragon_pic1, frog_pic
+from utilities import print_slow, print_slower, dragon_pic1, frog_pic, game_over
 class Player:
     def __init__(self):
         self.in_hand = {
@@ -11,7 +11,7 @@ player = Player()
 
 def scooter():
 
-    print("""Unfortunately, in your haste, you forgot to grab anything useful and you are now locked out of your house with no keys and no wallet. You search around for anything with wheels that will get you to school as fast as possible. But the only thing you can find is your little sister's My Little Pony scooter. Do you:
+    print_slow("""Unfortunately, in your haste, you forgot to grab anything useful and you are now locked out of your house with no keys and no wallet. You search around for anything with wheels that will get you to school as fast as possible. But the only thing you can find is your little sister's My Little Pony scooter. Do you:
     \n1. Take the scooter and risk dishonor on you, your family and your cow by someone seeing you?
     \n2. Give up on life and question every decision that has lead you to this moment?
     \nWhatchu wanna do? """)
@@ -20,14 +20,14 @@ def scooter():
     if choice == 1:
         start_ride()
     elif choice == 2:
-        print('GAME OVER')
+        game_over()
     else:
         choice = int(input('Not valid. Enter 1 or 2 '))
 
 
 
 def start_ride():
-    print("""You are now riding at top speed down the road, and you are actually making pretty good time; you might actually make it to school on time. But while you were reveling in your sweet scooter skills, you crash into an old lady waiting for the bus. What do you do?
+    print_slow("""You are now riding at top speed down the road, and you are actually making pretty good time; you might actually make it to school on time. But while you were reveling in your sweet scooter skills, you crash into an old lady waiting for the bus. What do you do?
     \n1. Aplogize profusely and help her up.
     \n2. Keep on ridin baby! She may have broken her hip, but you have more important things going on right now.
     \nWhat's it gonna be hotshot? """)
@@ -43,9 +43,9 @@ def start_ride():
 
 
 def frog():
-    print("""You have decided that you should probably help the old lady up. So you stop, and as you walk over to her, you can hear her talking in some strange language,"maybe she is foreign" you think to yourself""")
+    print_slow("""You have decided that you should probably help the old lady up. So you stop, and as you walk over to her, you can hear her talking in some strange language,"maybe she is foreign" you think to yourself""")
     print_slower('...')
-    print(""" POOF\n""")
+    print_slow(""" POOF\n""")
     frog_pic()
     print("""\nSHE TURNED YOU INTO A FROG!!! What do you do?
     \n1. Plead with the old lady to turn you back and hope she takes pity on your soul.
@@ -64,7 +64,7 @@ def frog():
 
 
 def enlightenment():
-    print("""Food really is the most important thing in life. So you hop on into a near by forest and search for a pond with a nice supply of flies. Eventually you come to a small secluded pond and decide this is it.
+    print_slow("""Food really is the most important thing in life. So you hop on into a near by forest and search for a pond with a nice supply of flies. Eventually you come to a small secluded pond and decide this is it.
     You are now at peace with life, sitting on your lilypad and eating flies to your hearts content. You have acheived enlightenment.""")
 
 
@@ -75,7 +75,7 @@ def mistake():
     super_powered()
 
 def super_powered():
-    print("""The old lady reconsiders her decision; after all, you were going to help her up. She turns you back into a human and she tells you that you can now change into a frog at will. What next?
+    print_slow("""The old lady reconsiders her decision; after all, you were going to help her up. She turns you back into a human and she tells you that you can now change into a frog at will. What next?
     \n1. Thank the lady for your new super power and get your butt to school.
     \n2. Become "FROG MAN! Archnemesis of the evil Fly Lord"
     \n What are you going to do? Remember, with great power come great responsibility. """)
@@ -93,21 +93,14 @@ def adventure_of_frogman():
 
 
 def get_your_butt_to_school():
-    print("""You finally make it to school, with just a couple minutes to spare. You run up the steps""")
+    print_slow("""You finally make it to school, with just a couple minutes to spare. You run up the steps""")
     dragon()
 
 
 def not_frog():
-<<<<<<< HEAD
-<<<<<<< HEAD
-        print("""You continue to race to school, you probably should have stopped but she seemed a little sketchy anyway""")
-=======
-=======
->>>>>>> restart update
-    print("""You continue to race to school, you probably should have stopped but she seemed a little sketchy anyway""")
->>>>>>> Added an ascii bus
+    print_slow("""You continue to race to school, you probably should have stopped but she seemed a little sketchy anyway""")
     print_slower('...')
-    print("""\nSo you're cuising down the sidewalk, not a care in the world, and you decide that you have a little extra time to grab some food. So you roll up to your favorite restaurant and order. But as you go to pay for it, you check in your backpack for your wallet which of course isn't there, but you do find a strange little bag full of dust that must have fallen into your bag when you hit the old lady. What do you do?
+    print_slow("""\nSo you're cuising down the sidewalk, not a care in the world, and you decide that you have a little extra time to grab some food. So you roll up to your favorite restaurant and order. But as you go to pay for it, you check in your backpack for your wallet which of course isn't there, but you do find a strange little bag full of dust that must have fallen into your bag when you hit the old lady. What do you do?
     \n1. Grab the food and run!
     \n2. Be honest and tell the cashier you forgot your wallet.
     \nWhat would your mother do? """)
@@ -121,7 +114,7 @@ def not_frog():
 
 def grab_food():
     player.in_hand['breakfast'] = True
-    print("""You grab the food and hightail it out of there! You feel a little bad about it, but you were super hungry so oh well.
+    print_slow("""You grab the food and hightail it out of there! You feel a little bad about it, but you were super hungry so oh well.
     You continue to ride your scooter and finally arrive at school.""")
     dragon()
 
@@ -154,7 +147,7 @@ def dragon():
             if breakfast_choice2 == Y:
                 print_slow("The dragon eats your breakfast and is satisfied. He let's you pass. You walk into school hungry, but victorious. You win!")
             elif breakfast_choice2 == N:
-                print_slow("You will NEVER give up your breakfast! It's the most important meal of the day!\nThe dragon respects your decision, but he too is hungry and decides to follow the same philosophy. You are eaten.\nYOU LOSE")
+                print_slow("You will NEVER give up your breakfast! It's the most important meal of the day!\nThe dragon respects your decision, but he too is hungry and decides to follow the same philosophy. You are eaten.\n")
                 print("""\033[1;35;40m            \||/
                         |  @___oo
               /\  /\   / (__,,,,|
@@ -167,8 +160,11 @@ def dragon():
          | \____(      )___) )\033[1;31;40m___\033[1;35;40m
           \______(_______;;; \033[1;31;40m__;;;____\033[1;37;40m""")
 
+                game_over()
+
+
         elif breakfast_choice == N:
-            print_slow("You will NEVER give up your breakfast! It's the most important meal of the day!\nThe dragon respects your decision, but he too is hungry and decides to follow the same philosophy. You are eaten.\nYOU LOSE")
+            print_slow("You will NEVER give up your breakfast! It's the most important meal of the day!\nThe dragon respects your decision, but he too is hungry and decides to follow the same philosophy. You are eaten.\n")
             print("""\033[1;35;40m            \||/
                     |  @___oo
           /\  /\   / (__,,,,|
@@ -180,6 +176,8 @@ def dragon():
      ||      /    \)___)\\ \033[1;31;40m. . .\033[1;35;40m
      | \____(      )___) )\033[1;31;40m___\033[1;35;40m
       \______(_______;;; \033[1;31;40m__;;;____\033[1;37;40m""")
+
+          game_over()
 
     elif choice == 2:
         print_slow("Your backpack contains:\n")
@@ -190,7 +188,7 @@ def dragon():
 
         if backpack_choice == 1:
 
-            print_slow('You attempt to calculate the dragons weaknesses with some advanced math. Unfortunatly, you slept through most of your math classes and so you take too long and the dragon eats you.\nYOU LOSE')
+            print_slow('You attempt to calculate the dragons weaknesses with some advanced math. Unfortunatly, you slept through most of your math classes and so you take too long and the dragon eats you.\n')
             print("""\033[1;35;40m            \||/
                     |  @___oo
           /\  /\   / (__,,,,|
@@ -202,10 +200,12 @@ def dragon():
      ||      /    \)___)\\ \033[1;31;40m. . .\033[1;35;40m
      | \____(      )___) )\033[1;31;40m___\033[1;35;40m
       \______(_______;;; \033[1;31;40m__;;;____\033[1;37;40m""")
+
+            game_over()
 
         elif backpack_choice == 2:
 
-            print_slow("You desperately search through your math book to find any weaknesses in the dragon. But this is a math book not a bestairy so they don't even mention dragons. So you throw your book at the dragon which only pisses it off and he eats you.\nYOU LOSE")
+            print_slow("You desperately search through your math book to find any weaknesses in the dragon. But this is a math book not a bestairy so they don't even mention dragons. So you throw your book at the dragon which only pisses it off and he eats you.\n")
             print("""\033[1;35;40m            \||/
                     |  @___oo
           /\  /\   / (__,,,,|
@@ -217,6 +217,8 @@ def dragon():
      ||      /    \)___)\\ \033[1;31;40m. . .\033[1;35;40m
      | \____(      )___) )\033[1;31;40m___\033[1;35;40m
       \______(_______;;; \033[1;31;40m__;;;____\033[1;37;40m""")
+
+              game_over()
 
         elif backpack_choice == 3:
 
@@ -247,6 +249,8 @@ def dragon():
      | \____(      )___) )\033[1;31;40m___\033[1;35;40m
       \______(_______;;; \033[1;31;40m__;;;____\033[1;37;40m""")
 
+          game_over()
+
     elif choice == 4:
         print("""\033[1;35;40m                \||/
                 |  @___oo
@@ -261,7 +265,7 @@ def dragon():
   \______(_______;;; __;;;\033[1;37;40m     / \\""")
         print_slow("You sit and talk with the dragon for a little while, you talk with him about all the struggles and prejudices he has faced throughout his life, just for being a dragon. You are really making progress with him, and he is calming down.")
         print_slower("...")
-        print_slow("But wait, this is a dragon and you aren't a certified therapist. So you didn't really fix his problems and he eats you.\nYOU LOSE")
+        print_slow("But wait, this is a dragon and you aren't a certified therapist. So you didn't really fix his problems and he eats you.\n")
         print("""\033[1;35;40m            \||/
                 |  @___oo
       /\  /\   / (__,,,,|
@@ -273,6 +277,8 @@ def dragon():
  ||      /    \)___)\\ \033[1;31;40m. . .\033[1;35;40m
  | \____(      )___) )\033[1;31;40m___\033[1;35;40m
   \______(_______;;; \033[1;31;40m__;;;____\033[1;37;40m""")
+      game_over()
+
 
 def iter():
     index = 1
