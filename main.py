@@ -8,7 +8,7 @@ import bus
 
 
 def game():
-    print("""
+    print("""\033[1;37;40m
     ____             __      __           _____      __                __
    / __ )____ ______/ /__   / /_____     / ___/_____/ /_  ____  ____  / /
   / __  / __ `/ ___/ //_/  / __/ __ \    \__ \/ ___/ __ \/ __ \/ __ \/ /
@@ -16,7 +16,7 @@ def game():
 /_____/\__,_/\___/_/|_|   \__/\____/   /____/\___/_/ /_/\____/\____/_/
 
     """)
-    print_slow("""\033[1;37;40mThe sun peaks through the window. You feel peaceful and calm as you open your eyes and look over at your clock. It's 8:30am. "OH ^$&*, I'm gonna be late for school!", you say out loud.
+    print_slow("""The sun peaks through the window. You feel peaceful and calm as you open your eyes and look over at your clock. It's 8:30am. "OH ^$&*, I'm gonna be late for school!", you say out loud.
     \n\nYou have an incredibly crucial decision to make. Do you:
     \n1. Calmly get up, get dressed, collect your things, make breakfast, and walk out the door?
     \n2. Frantically grab everything and run out the front door?
@@ -33,7 +33,7 @@ def game():
         if vehicle_choice == 2:
             delorean.delorean()
     elif choice == 2:
-        scooter.dragon()
+        scooter.scooter()
     elif choice == 3:
         print('You fail at life. Game over.')
 
