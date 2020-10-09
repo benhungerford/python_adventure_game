@@ -11,6 +11,20 @@ player = Player()
 def bus():
 
     print_slow('\nYou chose to take the bus\n')
+    print("""
+     .-------------------------------------------------------------.
+    '------..-------------..----------..----------..----------..--.|
+    |      \\\\           ||          ||          ||          ||  ||
+    |       \\\\          ||          ||          ||          ||  ||
+    |    ..   ||  _    _  ||    _   _ || _    _   ||    _    _||  ||
+    |    ||   || //   //  ||   //  // ||//   //   ||   //   //|| /||
+    |_.------"''----------''----------''----------''----------''--'|
+     |)|      |       |       |       |    |      mga|      ||==|  |
+     | |      |  _-_  |       |       |    |  .-.    |      ||==| C|
+     | |  __  |.'.-.' |   _   |   _   |    |.'.-.'.  |  __  | "__=='
+     '---------'|( )|'----------------------'|( )|'----------""
+                 '-'                          '-'
+    """)
     print_slow("""  With your breakfast in hand, backpack on your back, and your wallet in your pocket, you get on the bus, pay the bus driver $1, and look for a seat.\n\n There are two open seats:\n 1. One on the second row next to a 14 year old highschool kid.\n 2. Another near the back next to a sweet old lady with a big purse.\n\n Which seat do you choose? 1 or 2? """)
     player.in_hand['money'] = 24
 

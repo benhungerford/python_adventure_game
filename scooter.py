@@ -98,7 +98,11 @@ def get_your_butt_to_school():
 
 
 def not_frog():
+<<<<<<< HEAD
         print("""You continue to race to school, you probably should have stopped but she seemed a little sketchy anyway""")
+=======
+    print("""You continue to race to school, you probably should have stopped but she seemed a little sketchy anyway""")
+>>>>>>> Added an ascii bus
     print_slower('...')
     print("""\nSo you're cuising down the sidewalk, not a care in the world, and you decide that you have a little extra time to grab some food. So you roll up to your favorite restaurant and order. But as you go to pay for it, you check in your backpack for your wallet which of course isn't there, but you do find a strange little bag full of dust that must have fallen into your bag when you hit the old lady. What do you do?
     \n1. Grab the food and run!
@@ -272,4 +276,7 @@ def iter():
     for i in player.in_hand['backpack']:
         print_slow(index,". ",i, "\n")
         index += 1
+<<<<<<< HEAD
         
+=======
+>>>>>>> Added an ascii bus
