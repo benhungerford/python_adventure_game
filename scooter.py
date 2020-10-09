@@ -1,4 +1,4 @@
-from utilities import print_slow, print_slower
+from utilities import print_slow, print_slower, dragon_pic1
 class Player:
     def __init__(self):
         self.in_hand = {
@@ -140,35 +140,7 @@ def dragon():
     print_slower("""\n...\n......""")
     print_slow("""\nand then A DRAGON COMES FROM THE SKY BREATHING FIRE!!\n You did NOT see that coming!""")
     print_slower('   \n')
-    print("""                                                     /===-
-                                                    /===-_---~~~~~~~~~------____
-                                                   |===-~___                _,-' `
-                     -==\\\                          `//~\\\   ~~~~`---.___.-~~
-                 ______-==|                         | |  \\\           _-~`
-           __--~~~  ,-/-==\\\                        | |   `\\        ,'
-        _-~       /'    |  \\\        ^     /\         / /      \\      /
-      .'        /       |   \\\      /~\___/~~\   /' /        \\   /'
-     /  ____  /         |    \`\.__/-~~   \  |_/'  /          \\/'
-    /-'~    ~~~~~---__  |     ~-/~         ( )   /'        _--~`
-                      \_|      /        _) | ;  ),   __--~~
-                        '~~--_/      _-~/- |/ \   '-~ \\
-                       {\__--_/}    / \\\_>-|)<__\\      \\
-                       /'   (_/  _-~  | |__>--<__|      |
-                      |   _/) )-~     | |__>--<__|      |
-                      / /~ ,_/       / /__>---<__/      |
-                     o-o _//        /-~_>---<__-~      /
-                     (^(~          /~_>---<__-      _-~
-                    ,/|           /__>--<__/     _-~
-                 ,//('(          |__>--<__|     /  -Alex Wargacki  .----_
-                ( ( '))          |__>--<__|    |                 /' _---_~\\
-             `-)) )) (           |__>--<__|    |               /'  /     ~\\`\\
-            ,/,'//( (             \\__>--<__\\    \            /'  //        ||
-          ,( ( ((, ))              ~-__>--<_~-_  ~--____---~' _/'/        /'
-        `~/  )` ) ,/|                 ~-_~>--<_/-__       __-~ _/
-      ._-~//( )/ )) `                    ~~-'_/_/ /~~~~~~~__--~
-       ;'( ')/ ,)(                              ~~~~~~~~~~
-      ' ') '( (/
-        '   '  `""")
+    dragon_pic1()
     print_slow("""\nWhat do you do?
     \n1. Give the dragon your breakfast and hope that's enough to let you go.
     \n2. Check your backpack to see if there is anything in there that might help.
@@ -196,6 +168,19 @@ def dragon():
     elif choice == 2:
         print_slow("Your backpack contains:\n")
         iter()
+        print_slow("\nWhat will you use to fight the dragon? ")
+
+        backpack_choice = int(input())
+
+        # if backpack_choice == 1:
+        #
+        #
+        # elif backpack_choice == 2:
+        #
+        # elif backpack_choice == 3:
+        #
+        # elif backpack_choice == 4:
+
 
     elif choice == 3:
 
@@ -205,12 +190,35 @@ def dragon():
             print_slow("Unfortunatly you are only a regular human being and have no frog powers. The dragon is a little confused but still eats you.\nYOU LOSE")
 
     elif choice == 4:
+        print("""                \||/
+                |  @___oo
+      /\  /\   / (__,,,,|
+     ) /^\) ^\/ _)
+     )   /^\/   _)
+     )   _ /  / _)
+ /\  )/\/ ||  | )_)
+<  >      |(,,) )__)
+ ||      /    \)___)\\           o
+ | \____(      )___) )___      /|\\
+  \______(_______;;; __;;;     / \\""")
         print_slow("You sit and talk with the dragon for a little while, you talk with him about all the struggles and prejudices he has faced throughout his life, just for being a dragon. You are really making progress with him, and he is calming down.")
         print_slower("...")
         print_slow("But wait, this is a dragon and you aren't a certified therapist. So you didn't really fix his problems and he eats you.\nYOU LOSE")
+        print("""        \||/
+                |  @___oo
+      /\  /\   / (__,,,,|
+     ) /^\) ^\/ _)    /o\\
+     )   /^\/   _)
+     )   _ /  / _)
+ /\  )/\/ ||  | )_)
+<  >      |(,,) )__)
+ ||      /    \)___)\\
+ | \____(      )___) )\033[1;31;40m___\033[1;32;40m
+  \______(_______;;; __;;;""")
 
 def iter():
     index = 1
     for i in player.in_hand['backpack']:
         print(index,". ",i, "\n")
         index += 1
+dragon()
