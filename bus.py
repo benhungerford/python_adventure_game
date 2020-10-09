@@ -1,5 +1,4 @@
-from utilities import print_slow
-from utilities import print_slower
+from utilities import print_slow, print_slower, dragon_pic1
 
 class Player:
     def __init__(self):
@@ -40,6 +39,7 @@ def bus():
                     print_slow('You pop open the Mr. Fusion reactor, throw your breakfast in, and start the engine. Here we go! You fly off toward school, park, and start walking in to school with 5 minutes to spare.\n')
                     player.in_hand['breakfast'] = False
                     print_slower("""\n...\n......""")
+                    dragon_pic1()
                     print_slow("""\nand then A DRAGON COMES FROM THE SKY BREATHING FIRE!!\n You did NOT see that coming!""")
                     print_slow(f"""\n\nWhat should you do?!\nMaybe you can use something you have to get the dragon to go away.\n On hand, you have ${player.in_hand['money']} and {player.in_hand['backpack']}\n\nWhat do you want to offer the dragon?\n1. ${player.in_hand['money']}\n2. {player.in_hand['backpack']}\n1 or 2? """)
 
@@ -71,6 +71,7 @@ def bus():
                 elif drive_choice == 2:
                     print_slow("""You don't have time for this! You drive to school, ignoring the painful screams of the woman. You park the bus as the woman is having her baby on the third row and another passenger is calling an ambulance. No one likes you. But hey, you're about to walk into school on time.""")
                     print_slower("""\n...\n......""")
+                    dragon_pic1()
                     print_slow("""\nand then A DRAGON COMES FROM THE SKY BREATHING FIRE!!\n You did NOT see that coming!""")
                     print_slow("You try to think of what you have on you to get the dragon to go away. You're missing your wallet...did that kid steal it from you?!\n All you have is your breakfast. Do you offer it to the dragon?\n Y or N?")
 
