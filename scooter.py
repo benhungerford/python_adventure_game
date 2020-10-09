@@ -11,7 +11,7 @@ player = Player()
 
 def scooter():
 
-    print("""Unfortunatly, in your hast, you forgot to grab anything useful and you are now locked out of your house with no keys and no wallet. You search around for anything with wheels that will get you to school as fast as possible. But the only thing you can find is your little sister's My Little Pony scooter. Do you:
+    print("""Unfortunately, in your haste, you forgot to grab anything useful and you are now locked out of your house with no keys and no wallet. You search around for anything with wheels that will get you to school as fast as possible. But the only thing you can find is your little sister's My Little Pony scooter. Do you:
     \n1. Take the scooter and risk dishonor on you, your family and your cow by someone seeing you?
     \n2. Give up on life and question every decision that has lead you to this moment?
     \nWhatchu wanna do? """)
